@@ -1,0 +1,259 @@
+body {
+	background-color: hsl(185, 41%, 84%);
+	font-family: 'Space Mono', monospace;
+	font-size: 24px;
+}
+
+.header {
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container-calculator {
+	background-color: white;
+	width: 100%;
+	max-width: 920px;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+	align-items: center;
+}
+
+.section-1 {
+	display: inline-block;
+	float: left;
+	max-width: 380px;
+	max-height: 417px;
+	width: 100%;
+	height: 100%;
+	margin-right: 30px;
+	margin-left: 15px;
+}
+
+.section-2 {
+	display: inline-block;
+	background-color: hsl(183, 100%, 15%);
+	max-width: 413px;
+	min-width: 300px;
+	max-height: 417px;
+	width: 100%;
+	height: 100%;
+	margin: 0x auto;
+	border-radius: 20px;
+	color: white;
+	float: right;
+	font-size: 15px;
+	position: relative;
+	margin-right: 15px;
+}
+
+.bill-container {
+	/*width: 20px;*/
+}
+
+.bill, .people  {
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+	cursor: pointer;
+	background-color: hsl(189, 41%, 97%);
+	padding: 2px;
+	border: 1px solid hsl(189, 41%, 97%);
+	border-radius: 10px;
+}
+
+.bill:hover {
+	border: 1px solid hsl(172, 67%, 45%);
+}
+
+.dollar {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#bill-amount, #people-number {
+	float: right;
+	display: inline-block;
+	cursor: pointer;
+	background-color: hsl(189, 41%, 97%);
+	width: 85%;
+	border: 0px;
+	font-size: 25px;
+	text-align: right;
+	font-family: 'Space Mono', monospace;
+	color: hsl(184, 14%, 56%);
+	outline: none;
+	/*margin: 1px;*/
+	height: 32px;
+}
+
+.tip-container {
+	margin-top: 40px;
+}
+
+.tips {
+	display: block;
+	/*margin: 0px auto;*/
+}
+
+.tip {
+	display: inline-block;
+	background-color: hsl(183, 100%, 15%);
+	border-radius: 5px;
+	color: white;
+	width: 30%;
+	/*height: 55px;*/
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+	min-width: 90px;
+	margin-top: 15px ;
+}
+
+.tip:hover {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+}
+
+.custom-tip {
+	display: inline-block;
+	color: hsl(183, 100%, 15%);
+	border-radius: 5px;
+	background: white;
+	width: 30%;
+	min-width: 88px;
+	padding: 5px 0px 5px 0px;
+	background-color: hsl(189, 41%, 97%);
+	margin-top: 15px;
+	font-size: 20px;
+	font-family: 'Space Mono', monospace;
+	border: 1px solid hsl(189, 41%, 97%);
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.custom-tip:focus {
+	/*text-align: right;*/
+/*	border: 2px solid hsl(172, 67%, 45%);*/
+}
+
+.active-custom-tip {
+	border: 2px solid hsl(172, 67%, 45%);
+}
+
+.tip:hover, .custom-tip:hover {
+	cursor: pointer;
+}
+
+.active-tip {
+	background-color: hsl(172, 67%, 45%);
+}
+
+.people-container {
+	margin-top: 40px;
+	/*	width: 300px;*/
+/*	border: 1px solid black;*/
+	padding: 5px;
+}
+
+.people-text {
+	display: inline-block;
+	font-size: 16px;
+/*	text-align: right;*/
+	float: left;
+}
+
+#people-error {
+/*	display: inline-block;*/
+	display: none;
+	color: red;
+	font-size: 16px;
+	width: 140px;
+	float: right;
+	margin: 0px auto;
+	height: 30px;
+}
+
+.test {
+	display: block;
+	height: 30px;
+}
+
+/*.people {
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+	border: 1px solid black;
+	background-color: red;
+	padding: 10px;
+}*/
+
+.icon-person {
+	display: inline;
+/*	border: 1px solid black;*/
+}
+
+/*.people-number {
+	display: inline-block;
+	float: right;
+	color: hsl(184, 14%, 56%);
+}*/
+
+.tip-amount-container, .total-container {
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 45px;
+}
+
+.tip-amount-text, .total-text {
+	display: inline-block;
+}
+
+.tip-amount-text-1 {
+
+}
+
+.tip-amount-text-2, .total-text-2 {
+	color: hsl(186, 14%, 43%);
+}
+
+.tip-amount, .total-amount {
+	float: right;
+	display: inline-block;
+	font-size: 40px;
+	color: hsl(172, 67%, 45%);
+}
+
+/*.total-container {
+	width: 90%;
+	margin: 0px auto;
+	margin-top: 45px;
+}*/
+
+.reset {
+	/*border: 1px solid black;*/
+	border-radius: 10px;
+	width: 80%;
+	margin: 0px auto;
+	/*float: bottom;*/
+	/*position: absolute;*/
+	margin-top: 160px;
+	text-align: center;
+	padding: 10px;
+	color: hsl(183, 100%, 15%);
+	background-color: hsl(186, 14%, 43%);
+}
+
+.reset:hover {
+	background-color: hsl(185, 41%, 84%);
+	cursor: pointer;
+}

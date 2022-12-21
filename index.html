@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        SPLI
+        <div>
+          TTER
+        </div>
+      </div>
+      
+      <div class="container-calculator">
+        <div class="section-1">
+          <div class="bill-container">
+            Bill
+            <div class="bill">
+              <div class="dollar"><img src="images/icon-dollar.svg"></div>
+              <!-- <div class="bill-amount">0</div> -->
+              <input id="bill-amount" type="currency" name="amount" placeholder="0" maxlength=8>
+            </div>
+          </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+          <div class="tip-container">
+            <div class="tip-header">
+              Select Tip %
+            </div>
+            <div class="tips">
+              <div class="tip">5%</div>
 
-  Number of People
+              <div class="tip">10%</div>
 
-  Tip Amount
-  / person
+              <div class="tip">15%</div>
 
-  Total
-  / person
+              <div class="tip">25%</div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+              <div class="tip">50%</div>
+              <input class="custom-tip" type="currency" value=0 name="custom-tip" placeholder="Custom" maxlength=3>
+            </div>
+          </div>
+
+          <div class="people-container">
+            <div class="test">
+              <div class="people-text">Number of People</div>
+              <div id="people-error">Can't be zero</div>
+            </div>
+            <div class="people">
+              <div class="icon-person">
+                <img alt="person" src="images/icon-person.svg">
+              </div>
+              <input id="people-number" type="currency" name="people" placeholder="0">
+            </div>
+          </div>
+        </div>
+
+        <div class="section-2">
+          <div class="tip-amount-container">
+          	<div class="tip-amount-text">
+          		<div class="tip-amount-text-1">
+          			Tip Amount
+          		</div>
+          		<div class="tip-amount-text-2">
+   							/ person       			
+          		</div>
+          	</div>
+
+          	<div class="tip-amount">
+          		<span>$</span><span id="tip">0.00</span>
+          	</div>
+          </div>
+
+          <div class="total-container">
+          	<div class="total-text">
+          		<div class="total-text-1">
+          			Total
+          		</div>
+          		<div class="total-text-2">
+          			/ person
+          		</div>
+          	</div>
+
+          	<div class="total-amount">
+          		<span>$</span><span id="total-amount">0.00</span>
+          	</div>
+          </div>
+
+          <div class="reset">
+          	RESET
+          </div>
+      </div>
+    </main>
+
+  <!--   <div class="colors">
+    	<div style="background-color: hsl(172, 67%, 45%)">Strong cyan: hsl(172, 67%, 45%)</div>
+    	<div style="background-color: hsl(183, 100%, 15%)">Very dark cyan: hsl(183, 100%, 15%)</div>
+    	<div style="background-color: hsl(186, 14%, 43%)">Dark grayish cyan: hsl(186, 14%, 43%)</div>
+    	<div style="background-color: hsl(184, 14%, 56%)">Grayish cyan: hsl(184, 14%, 56%)</div>
+    	<div style="background-color: hsl(185, 41%, 84%)">Light grayish cyan: hsl(185, 41%, 84%)</div>
+    	<div style="background-color: hsl(189, 41%, 97%)">Very light grayish cyan: hsl(189, 41%, 97%)</div>
+    	<div style="background-color: hsl(0, 0%, 100%)">White: hsl(0, 0%, 100%)</div>
+    </div> -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
