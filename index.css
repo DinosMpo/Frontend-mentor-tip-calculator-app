@@ -257,3 +257,7 @@ body {
 	background-color: hsl(185, 41%, 84%);
 	cursor: pointer;
 }
+
+.active-reset {
+	background-color: hsl(172, 67%, 45%);
+}
